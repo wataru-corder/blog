@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+
+import logo from "@assets/astro-icon.svg";
+import heroImg from "@assets/hero.jpg";
+---
+
+<div class="hero">
+  <h1>
+    <Image src={logo} alt="アストロノーツのアイコン" class="hero-logo" />
+    Hello, Astronaut!
+  </h1>
+  <Image src={heroImg} alt="アストロノーツのアイコン" class="hero-img" />
+  <p>
+    初めてのフレームワークであるAstroを使って、ブログを作成してみました。AstroはReactやVue.jsのようなコンポーネント指向のフレームワークです。Astroは、静的サイトジェネレーターとしても動的なサイトとしても使用できます。Astroは、ReactやVue.jsのようなコンポーネント指向のフレームワークです。Astroは、静的サイトジェネレーターとしても動的なサイトとしても使用できます。
+  </p>
+  <p>
+    初めてのフレームワークであるAstroを使って、ブログを作成してみました。AstroはReactやVue.jsのようなコンポーネント指向のフレームワークです。Astroは、静的サイトジェネレーターとしても動的なサイトとしても使用できます。Astroは、ReactやVue.jsのようなコンポーネント指向のフレームワークです。Astroは、静的サイトジェネレーターとしても動的なサイトとしても使用できます。
+  </p>
+</div>
+
+<style lang="scss">
+  @use "@styles/scss/style.scss" as g;
+  h1 {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 12px;
+    font-size: 3rem;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .hero-logo {
+    width: 40px;
+    aspect-ratio: 1;
+  }
+  .hero-img {
+    border-radius: 8px;
+  }
+</style>
